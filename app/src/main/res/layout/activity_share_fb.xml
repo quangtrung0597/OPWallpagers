@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.trung.onepiecewallpagers.ShareFb">
+    <android.support.v7.widget.Toolbar
+        app:titleTextColor="#ffffff"
+        android:id="@+id/toolbar"
+        android:background="@color/toolbar"
+        android:layout_width="match_parent"
+        app:theme="@style/ToolbarStyle"
+        android:layout_height="?android:attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imViewShare"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+
+        <com.facebook.login.widget.LoginButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/connectWithFbButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:text="  connect_with_facebook" />
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/border_btn"
+            android:id="@+id/btnShareFB"
+            android:text="Share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

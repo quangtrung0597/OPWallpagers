@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.trung.onepiecewallpagers.FavActivity">
+
+    <android.support.v7.widget.Toolbar
+        app:titleTextColor="#ffffff"
+        android:id="@+id/toolbar"
+        android:background="@color/toolbar"
+        android:layout_width="match_parent"
+        app:theme="@style/ToolbarStyle"
+        android:layout_height="?android:attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+    <GridView
+        android:id="@+id/gvImageFav"
+        android:padding="5dp"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></GridView>
+</LinearLayout>
